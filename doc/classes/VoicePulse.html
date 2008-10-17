@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: VoicePulse</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">VoicePulse</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/lib/rubypulse_rb.html">
+                lib/rubypulse.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                Object
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000007">activatePhoneNumbers</a>&nbsp;&nbsp;
+      <a href="#M000008">deactivatePhoneNumbers</a>&nbsp;&nbsp;
+      <a href="#M000002">generateReport</a>&nbsp;&nbsp;
+      <a href="#M000009">getAvailablePhoneNumberAreaCodes</a>&nbsp;&nbsp;
+      <a href="#M000010">getAvailablePhoneNumberRateCenters</a>&nbsp;&nbsp;
+      <a href="#M000011">getAvailablePhoneNumberStates</a>&nbsp;&nbsp;
+      <a href="#M000012">getAvailablePhoneNumbers</a>&nbsp;&nbsp;
+      <a href="#M000004">getBalance</a>&nbsp;&nbsp;
+      <a href="#M000013">getCredentials</a>&nbsp;&nbsp;
+      <a href="#M000005">getRate</a>&nbsp;&nbsp;
+      <a href="#M000003">getReport</a>&nbsp;&nbsp;
+      <a href="#M000014">getUser</a>&nbsp;&nbsp;
+      <a href="#M000001">new</a>&nbsp;&nbsp;
+      <a href="#M000006">refill</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Class methods</h3>
+
+      <div id="method-M000001" class="method-detail">
+        <a name="M000001"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000001.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000001.html');return false;">
+          <span class="method-name">new</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+When you create a VoicePulseApi.new class it creates a
+SOAP::WSDLDriverFactory class called @driver. It also creates a variable
+@apikey to store the ApiKey from <a href="VoicePulse.html">VoicePulse</a>.
+</p>
+<p>
+Example:
+</p>
+<pre>
+   obj = VoicePulseApi.new
+</pre>
+        </div>
+      </div>
+
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000007.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000007.html');return false;">
+          <span class="method-name">activatePhoneNumbers</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: <a href="VoicePulse.html#M000007">activatePhoneNumbers</a> = {:ApiKey
+=&gt; @apikey, :PhoneNumbers =&gt; Array, :AccountNumber1 =&gt; String,
+:AccountNumber2 =&gt; String}
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000008.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000008.html');return false;">
+          <span class="method-name">deactivatePhoneNumbers</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: <a href="VoicePulse.html#M000008">deactivatePhoneNumbers</a> =
+{:ApiKey =&gt; @apikey, :PhoneNumbers =&gt; Array, :AccountNumber1 =&gt;
+String, :AccountNumber2 =&gt; String}
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000002.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000002.html');return false;">
+          <span class="method-name">generateReport</span><span class="method-args">(dates)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Requires a single hash in the format:
+</p>
+<pre>
+   (:ApiKey =&gt; String, :StartYear =&gt; Integer, :StartMonth =&gt; Integer, :StartDay =&gt; Integer, :EndYear =&gt; Integer, :EndMonth =&gt; Integer, :EndDay =&gt; Integer, :Filename =&gt; String)
+</pre>
+<p>
+Example:
+</p>
+<pre>
+   datehash = {:ApiKey =&gt; @apikey, :StartYear =&gt; 2007, :StartMonth =&gt; 03, :StartDay =&gt; 01, :EndYear =&gt; 2007, :EndMonth =&gt; 04, :EndDay =&gt; 02, :Filename =&gt; &quot;vpreport&quot;}
+   obj.generateReport(datehash) =&gt; &quot;vpreport.zip&quot;
+</pre>
+<p>
+Returns the name of the Filename created (will always be a .zip file
+because of the way <a href="VoicePulse.html">VoicePulse</a> processes the
+report).
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000009.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000009.html');return false;">
+          <span class="method-name">getAvailablePhoneNumberAreaCodes</span><span class="method-args">(state)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Requires input of state as a string (two digit code). Returns list of
+available area codes.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000010.html');return false;">
+          <span class="method-name">getAvailablePhoneNumberRateCenters</span><span class="method-args">(state, areacode)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Requires two strings for input (&#8216;state&#8217;,
+&#8216;areacode&#8217;) and returns a hash of {&#8216;rate center&#8217;
+=&gt; &#8216;city&#8217;}
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000011.html');return false;">
+          <span class="method-name">getAvailablePhoneNumberStates</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: <a href="VoicePulse.html#M000011">getAvailablePhoneNumberStates</a> =
+{:ApiKey =&gt; @apikey} Accepts no input and returns an array of available
+states (two digit codes)
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000012.html');return false;">
+          <span class="method-name">getAvailablePhoneNumbers</span><span class="method-args">(state, areacode, ratecenter)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: <a href="VoicePulse.html#M000012">getAvailablePhoneNumbers</a> =
+{:ApiKey =&gt; @apikey, :State =&gt; String, :AreaCode =&gt; String,
+:RateCenter =&gt; String} Requires inputs of state, areacode, and
+ratecenter as strings. Returns and array of available phone numbers.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000004.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000004.html');return false;">
+          <span class="method-name">getBalance</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current balance of the account and returns it as a String
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000013.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000013.html');return false;">
+          <span class="method-name">getCredentials</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: <a href="VoicePulse.html#M000013">getCredentials</a> = {:ApiKey =&gt;
+@apikey} Accepts no inputs and returns an array of [login, password] for
+use in your sip.conf or iax2.conf
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000005.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000005.html');return false;">
+          <span class="method-name">getRate</span><span class="method-args">(phonenumber)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Requires a phone number with no formatting as a String and returns a String
+for the rate per-minute.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000003.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000003.html');return false;">
+          <span class="method-name">getReport</span><span class="method-args">(filename)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Requires a filename as a String (the one returned from <a
+href="VoicePulse.html#M000002">generateReport</a>). Returns a https URL to
+download the file from.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000014.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000014.html');return false;">
+          <span class="method-name">getUser</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Accepts no input and returns and array of [username, email]
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="VoicePulse.src/M000006.html" target="Code" class="method-signature"
+            onclick="popupCode('VoicePulse.src/M000006.html');return false;">
+          <span class="method-name">refill</span><span class="method-args">(ccvcode, amount)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+TODO: Need to test this when account balance gets low Requires a CCV Code
+(3 digit number from back of Credit Card) and an amount as Strings. Returns
+success or failure message.
+</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

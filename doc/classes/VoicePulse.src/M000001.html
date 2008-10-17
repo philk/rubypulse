@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>new (VoicePulse)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/rubypulse.rb, line 16</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>()
+    <span class="ruby-identifier">wsdl</span> = <span class="ruby-value str">'http://connect.voicepulse.com/secure/services/Api0605.asmx?WSDL'</span>
+    <span class="ruby-ivar">@driver</span> = <span class="ruby-constant">SOAP</span><span class="ruby-operator">::</span><span class="ruby-constant">WSDLDriverFactory</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">wsdl</span>).<span class="ruby-identifier">create_rpc_driver</span>
+    <span class="ruby-ivar">@apikey</span> = <span class="ruby-constant">API_KEY</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

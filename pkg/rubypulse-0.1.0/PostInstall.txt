@@ -1,0 +1,2 @@
+
+For more information on rubypulse, see http://rubypulse.rubyforge.org

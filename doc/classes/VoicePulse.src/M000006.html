@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>refill (VoicePulse)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/rubypulse.rb, line 79</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">refill</span>(<span class="ruby-identifier">ccvcode</span>, <span class="ruby-identifier">amount</span>)
+    <span class="ruby-identifier">result</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-constant">RefillNow</span>(<span class="ruby-identifier">:ApiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@apikey</span>, <span class="ruby-identifier">:CreditCardCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ccvcode</span>, <span class="ruby-identifier">:Amount</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">amount</span>)
+    <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">refillNowResult</span>.<span class="ruby-identifier">refillNow</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
